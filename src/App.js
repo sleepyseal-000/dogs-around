@@ -39,9 +39,10 @@ function App() {
     }
 
     const handleRemove = (index) => {
-      let newList = banlist.filter((item) => item.index !== index);
+      let newList = banlist.filter((item, i) => i !== index);
       setBanlist(newList);
     };
+    
     
 
   return (
